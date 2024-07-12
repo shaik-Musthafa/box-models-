@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <style>
+        table,tr{
+            border: 2px solid black;
+        }
+        .even{
+            color: white;
+            border: 2px solid rgb(14, 13, 13);
+            height: 10vh;
+            width: 10vw;
+            background-color: black; 
+            justify-content: center;
+            align-items: center;
+        } 
+        .odd{
+            border: 2px solid;
+            background-color: white;
+            color: black;
+            height: 10vh;
+            width: 10vw;
+            position: relative;
+            /* padding: 5px; */
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .soldier{
+         border: 2px solid;
+         height: 10vh;
+         width: 10vw;
+         background-color: black;
+         color: white;   
+        }
+        .soldier_1{
+            border: 2px solid;
+            height: 10vh;
+            width: 10vw;
+            background-color: white;
+            color: black;
+        }
+        p{
+           position: relative;
+           left: 50px;
+           font-size: 20px;
+        }
+        .dot{
+            border: 2px solid;
+            height: 10vh;
+            width: 10vw;
+            background-color: white;
+            /* color: white; */
+        }
+        .dot_1{
+            border: 2px solid;
+            height: 10vh;
+            width: 10vw;
+            background-color: black;
+            /* color: white; */
+        }
+        td:hover{
+            transform: scale(0.5);
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="odd"><p>&#9814;</p></td>
+            <td class="even" ><p>&#9822;</p></td>
+            <td class="odd"><p>&#9821;</p></td>
+            <td class="even"><p>&#9819;</p></td>
+            <td class="odd"><p>&#9818;</p></td>
+            <td class="even"><p>&#9821;</p></td>
+            <td class="odd"><p>&#9822;</p></td>
+            <td class="even"><p>&#9814;</p></td>
+        </tr>
+        <tr>
+            <td class="soldier"><p>&#9817;</p></td>
+            <td class="soldier_1"><p>&#9817;</p></td>
+            <td class="soldier"><p>&#9817;</p></td>
+            <td class="soldier_1"><p>&#9817;</p></td>
+            <td class="soldier"><p>&#9817;</p></td>
+            <td class="soldier_1"><p>&#9817;</p></td>
+            <td class="soldier"><p>&#9817;</p></td>
+            <td class="soldier_1"><p>&#9817;</p></td>
+        </tr>
+        <tr>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+        </tr>
+        <tr>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+        </tr>
+        <tr>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+        </tr>
+        <tr>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+            <td class="dot_1"></td>
+            <td class="dot"></td>
+        </tr>
+        <tr>
+            <td class="soldier_1"><p>&#9817;</p></td>
+            <td class="soldier"><p>&#9817;</p></td>
+            <td class="soldier_1"><p>&#9817;</p></td>
+            <td class="soldier"><p>&#9817;</p></td>
+            <td class="soldier_1"><p>&#9817;</p></td>
+            <td class="soldier"><p>&#9817;</p></td>
+            <td class="soldier_1"><p>&#9817;</p></td>
+            <td class="soldier"><p>&#9817;</p></td>
+        </tr>
+        <tr>
+            <td class="even"><p>&#9814;</p></td>
+            <td class="odd" ><p>&#9822;</p></td>
+            <td class="even"><p>&#9821;</p></td>
+            <td class="odd"><p>&#9819;</p></td>
+            <td class="even"><p>&#9818;</p></td>
+            <td class="odd"><p>&#9821;</p></td>
+            <td class="even"><p>&#9822;</p></td>
+            <td class="odd"><p>&#9814;</p></td>
+        </tr>
+    </table>
+</body>
+</html>

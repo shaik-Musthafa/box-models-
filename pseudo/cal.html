@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 50px 50px 50px;
+            background-color: rgb(255, 191, 0);
+            gap: 10px;
+            border: 2px solid;
+            width: 170px;
+            padding: 5px;
+        }
+        .container:hover{
+            background-color: chartreuse;
+        }
+        .child{
+            background-color: antiquewhite;
+            
+        }
+        .child:hover{
+            color: chocolate;
+            transform: rotateX(180deg);
+            transition: all 2s;
+        }
+        .childeq{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .div{
+            justify-content: end;
+        }
+        .p{
+            border: 2px solid;
+            width: 170px;
+            border-radius: 20px;
+            text-align: center;
+            /* align-items: end; */
+        }
+        p:hover{
+            color: aqua;
+            transform: rotateZ(360deg);
+            transition: all 3s;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="div">
+        <p class="p">2*2=4</p>
+    </div>
+    <div class="container">
+        <div class="child child1">1</div>    
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+        <div class="child child5">5</div>
+        <div class="child child6">6</div>
+        <div class="child child7">7</div>
+        <div class="child child8">8</div>
+        <div class="child child9">9</div>
+        <div class="child child3">0</div>
+        <div class="child childp">+</div>
+        <div class="child child">-</div>
+        <div class="child childm">*</div>
+        <div class="child childmod">/</div>
+        <div class="child child_sp">b_space</div>
+        <div class="child childeq">=</div>
+    </div>
+    
+</body>
+</html>
