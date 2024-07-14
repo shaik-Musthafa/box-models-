@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout_s</title>
+    <link rel="icon" href="../assests/luffy3.png" style="height: auto; width: auto; border-radius: 20%;">
+    <style>
+        .container{
+            display: grid;
+            /* background-color: gold; */
+            grid-template-columns: 100px 100px 100px 0px 100px 100px 100px 100px ;
+            gap: 10px;
+            grid-template-rows: 90px 250px;
+        }
+        .child{
+            background-color: aqua;
+        }
+        .child1{
+            grid-column: 1/2;
+            background-color: beige;
+        } 
+        .child1:hover{
+            transform: rotate3d(2,2,4,180deg);
+            transition: all 1s;
+        }
+        .child2{
+            grid-row: 2;
+            background-color: burlywood;
+        }
+        .child2:hover{
+            /* transform: rotateZ(90deg); */
+            transform: rotateX(180deg);
+            /* transform: rotateY(90deg); */
+            transition: all 3s;
+        }
+        .child3{
+            grid-column: 2/5;
+        }
+        .child3:hover{
+            transform: rotate3d(6,2,4,360deg);
+            transition: all 3s;
+        }
+        .child4{
+            grid-column: 5/6;
+        }
+        .child4:hover{
+            transform: rotate3d(3,10,8,270deg);
+            transition: all 2s;
+        }
+        .child5{
+            grid-row: 2;
+            grid-column: 2/6;
+        }
+        .child5:hover{
+            transform: rotate3d(20,10,20,360deg);
+            transition: all 2s;
+        }
+        .child6{
+            grid-column-start: 6;
+            grid-row: 1/3;
+            background-color: chartreuse;
+        }
+        .child6:hover{
+            transform: rotate3d(10,10,15,360deg);
+            transition: all 2s;
+        }
+        .child7{ 
+            grid-column-start: 7;
+            grid-row: 1/3;
+        }
+        .child7:hover{
+            transform: rotate3d(20,30,50,360deg);
+            transition: all 0.7s;
+        }
+        .child8{
+            grid-column-start: 8;
+            grid-row: 1/3;
+        }
+        .child8:hover{
+            transform: rotate3d(10,40,100,360deg);
+            transition: all 0.6s;
+        }
+        .container_1{
+            display: grid;
+            grid-template-columns: 200px 100px 200px;
+            gap: 5px;
+            grid-template-rows: 100px 100px 100px;
+        }
+        .img{
+            border: 3px solid rgb(251, 23, 23);
+        }
+        .img1{
+            grid-column: 1/2;
+            background-image: url(../assests/sukuna.jpg);
+            background-repeat: no-repeat;
+            color: rgb(186, 186, 201);
+        }
+        .img:hover{
+            transform: rotate3d(1,1,1,360deg);
+            transition: all 0.7s;
+            box-shadow: 20px 10px 10px gray;
+        }
+        .img2{
+            grid-column: 2/4;
+            background-image: url(../assests/sunny1.png);
+            background-repeat: no-repeat;
+        }
+        .img3{
+            grid-column: 2;
+            background-image: url(../assests/luffy3.png);
+            background-repeat: no-repeat;
+        }
+        .img4{
+            grid-row: 2/4;
+            grid-column: 1;
+            background-image: url(../assests/sunny2.png);
+            /* background-repeat: no-repeat; */
+            color: white;
+        }
+        .img5{
+            grid-column: 3;
+            grid-row: 2/4;
+            background-image: url(../assests/kawasaki.jpg);
+            color: chartreuse;
+        }
+        .img6{
+            background-image: url(../assests/luffy3.png);
+            background-repeat: no-repeat;
+            grid-column: 2;
+        }
+        .container_2{
+            display: grid;
+            grid-template-columns: 350px 350px 350px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 5px;
+        }
+        .lay{ 
+            background-color: aliceblue;
+            gap: 10px;
+        }
+        .lay:hover{
+            box-shadow: 12px 10px 12px green;
+            /* transform: scale(3); */
+            transform: rotate3d(1,1,2,360deg);
+            transition: all 1s;
+        }
+        .lay1{
+            background-color: aqua;
+            grid-column: 1/2;
+        }
+        .lay2{
+            grid-column: 2/3;
+            background-color: aqua;
+        }
+        .lay3{
+            grid-column: 2/4;
+            grid-row: 2/4;
+            background-color: lightgreen;
+        }
+        .lay4{
+            grid-row: 1;
+            grid-column: 3;
+            background-color: aqua;
+        }
+        .lay5{
+            grid-row: 2;
+            background-color: aqua;
+        }
+        .lay6{
+            grid-row: 3;
+            background-color: aqua;
+        }
+        .container_3{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            gap: 5px;
+            grid-template-rows: 100px 100px 100px 100px;
+            background-color: white;
+        }
+        .out{
+            background-color: aqua;
+        }
+        .out:hover{
+            transform: rotate3d(3,1,4,360deg);
+            transition: all 0.6s;
+        }
+        .out1{
+            grid-row: 1/4;
+        }
+        .out2{
+            grid-column: 2/4;
+            background-color: greenyellow;
+        }
+        .out3{
+            background-color: brown;
+        }
+        .out4,.out5,.out7,.out8{
+            background-color: brown;
+        }
+        .out6{
+            background-color: lightcoral;
+            grid-row: 2/4;
+            grid-column: 4;
+        }
+    </style>
+</head>
+<body>
+    <h3>Layout-1</h3>
+    <div class="container">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+        <div class="child child5">5</div>
+        <div class="child child6">6</div>
+        <div class="child child7">7</div>
+        <div class="child child8">8</div>
+    </div><hr>
+    <h3>Image-Gallery</h3>
+    <div class="container_1">
+        <div class="img img1">1</div>
+        <div class="img img2">2</div>
+        <div class="img img3">3</div>
+        <div class="img img4">4</div>
+        <div class="img img5">5</div>
+        <div class="img img6">6</div>
+    </div><hr>
+    <h3>Layout-2</h3>
+    <div class="container_2">
+        <div class="lay lay1">1</div>
+        <div class="lay lay2">2</div>
+        <div class="lay lay3">3</div>
+        <div class="lay lay4">4</div>
+        <div class="lay lay5">5</div>
+        <div class="lay lay6">6</div>
+    </div><hr>
+    <h3>Layout-3</h3>
+    <div class="container_3">
+        <div class="out out1">1</div>
+        <div class="out out2">2</div>
+        <div class="out out3">3</div>
+        <div class="out out4">4</div>
+        <div class="out out5">5</div>
+        <div class="out out6">6</div>
+        <div class="out out7">7</div>
+        <div class="out out8">8</div>
+    </div>
+</body>
+</html>
