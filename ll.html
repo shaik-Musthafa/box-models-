@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container {
+            border: 1px solid;
+            width: 70px;
+            height: 170px;
+            border-radius: 20%;
+            background-color: black;
+            box-shadow: 2px 2px 5px 5px black;
+            padding-top: 4px;
+            padding-left: 15px;
+        }
+        .light {
+            border: 1px solid;
+            height: 40px;
+            width: 40px;
+            border-radius: 40px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .red {
+            background-color: red;
+        }
+        .red:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(2px 2px 4px rgb(207, 99, 99));
+        }
+        .orange {
+            background-color: orange;
+        }
+        .orange:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(2px 2px 4px rgb(210, 125, 55));
+        }
+        .green {
+            background-color: rgb(64, 150, 74);
+        }
+        .green:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(2px 2px 4px rgb(131, 207, 99));
+        }
+        svg {
+            margin-top: 20px;
+            height: 50px;
+            transition: transform 3s ease, background-color 3s ease;
+        }
+        @keyframes moveSvg {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(130px);
+            }
+        }
+        .id:hover #svg {
+            animation: moveSvg 3s forwards forwards;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div target="id" class="light red"></div>
+            <div class="light orange"></div>
+            <div class="light green"></div>
+        </div>
+        <svg name="id" id="svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                </defs>
+                <polyline class="cls-1" points="3.89 18.68 2.93 18.68 1.5 18.68 1.5 13.91 12.96 13.91 12.96 18.68 10.57 18.68"></polyline>
+                <path class="cls-1" d="M15.82,18.68H13V6.27H17a1.91,1.91,0,0,1,1.89,1.64l.72,5"></path>
+                <circle class="cls-1" cx="17.73" cy="18.68" r="1.91"></circle>
+                <circle class="cls-1" cx="4.84" cy="18.68" r="1.91"></circle>
+                <circle class="cls-1" cx="8.66" cy="18.68" r="1.91"></circle>
+                <line class="cls-1" x1="15.82" y1="12.95" x2="19.64" y2="12.95"></line>
+                <polyline class="cls-1" points="19.64 12.96 22.5 13.91 22.5 18.68 19.64 18.68"></polyline>
+                <polyline class="cls-1" points="10.09 3.41 12.96 3.41 12.96 8.18"></polyline>
+                <polygon class="cls-1" points="12.96 13.91 9.14 13.91 10.09 9.14 12.96 9.14 12.96 13.91"></polygon>
+            </g>
+        </svg>
+    </div>
+</body>
+</html>
