@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before</title>
+    <style>
+        p::before{
+            content: 'read more-';
+            color: blue;
+            text-decoration: none;
+        }
+        .req::before{
+            content: 'hello';
+            color: red;
+            background-color: red;
+        }
+        h1{
+            position: relative;
+            z-index: -1;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea esse, perferendis doloribus, porro deleniti culpa exercitationem at nihil officia eius dolores quibusdam? Officiis in dolor doloribus eum necessitatibus voluptatibus?</p>
+    </div>
+    <h1 class="req">hello</h1>
+</body>
+</html>
